@@ -87,7 +87,7 @@ node index.js
 
 If successful, the server will start, and you can access the app in your browser at:
 
-http://localhost:3000
+http://localhost:8080
 
 # 📜 License
 
