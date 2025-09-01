@@ -1,0 +1,106 @@
+/* manage_student_account.css */
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Playfair+Display:wght@600&display=swap');
+/* Reset & layout */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  background: #F4F6F8
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' viewBox='0 0 120 80'><path d='M0,30 C40,50 80,10 120,30 L120,0 L0,0 Z' fill='%231976D2' fill-opacity='0.15'/><path d='M0,45 C40,25 80,65 120,45 L120,0 L0,0 Z' fill='%231976D2' fill-opacity='0.08'/></svg>")
+    no-repeat top center / cover;
+  color: #2C3E50;
+}
+/* Header: same size as dashboard, Dashboard centered, Logout right */
+header {
+  padding: 1rem;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  position: relative;
+}
+header a {
+  color: #1976D2;
+  font-weight: 500;
+  text-decoration: none;
+}
+/* Logout at far right */
+header a:first-of-type {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* Dashboard centered (default due to text-align: center) */
+header a:nth-of-type(2) {
+  /* No positioning needed - centered by default */
+}
+header a:hover {
+  text-decoration: underline;
+}
+/* Main content wrapper */
+main {
+  max-width: 600px;
+  margin: 4rem auto 2rem;
+  padding: 1rem;
+}
+/* Page title */
+main h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #2C3E50;
+}
+/* Form card */
+#manage-student-account-form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+/* Labels */
+#manage-student-account-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+/* Inputs */
+#manage-student-account-form input {
+  width: 100%;
+  padding: 0.9rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+#manage-student-account-form input:disabled {
+  background: #f7f7f7;
+  color: #777;
+}
+#manage-student-account-form input:focus {
+  outline: none;
+  border-color: #1976D2;
+  box-shadow: 0 0 0 3px rgba(33,150,243,0.3);
+}
+/* Edit/Confirm button */
+#edit-btn {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  background-color: #7B8FA1;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+#edit-btn:hover {
+  background-color: #5F7285;
+}

@@ -1,0 +1,120 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Playfair+Display:wght@600&display=swap');
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Full‐height layout */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Background & typography */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: #2c3e50;
+    background-color: #f2f2f2;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' viewBox='0 0 120 80'><path d='M0,30 C30,50 90,10 120,30 L120,0 L0,0 Z' fill='%23e67e22'/><path d='M0,45 C30,25 90,65 120,45 L120,0 L0,0 Z' fill='%232c3e50' fill-opacity='0.1'/></svg>");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% 25%;
+}
+
+/* Center the form */
+#signupContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 1rem;
+}
+
+/* Card */
+#signupForm {
+    background: #fff;
+    max-width: 540px;
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Heading */
+#signupForm h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.6rem;
+    color: #2c3e50;   /* darker for contrast */
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Logo */
+.asta-logo {
+    display: block;
+    max-width: 180px;
+    width: 100%;
+    margin: 0 auto 1rem;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+/* Inputs & select (uniform) */
+input,
+select {
+    width: 100%;
+    padding: 0.9rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #e67e22;
+    box-shadow: 0 0 0 3px rgba(230,126,34,0.3);
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #e67e22;  /* livelier accent */
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 0.5rem;
+}
+button:hover {
+    background-color: #cf6d13;
+}
+
+/* Redirect link */
+#redirectContainer {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.95rem;
+}
+#redirectContainer a {
+    color: #e67e22;
+    font-weight: 500;
+    text-decoration: none;
+}
+#redirectContainer a:hover {
+    text-decoration: underline;
+}

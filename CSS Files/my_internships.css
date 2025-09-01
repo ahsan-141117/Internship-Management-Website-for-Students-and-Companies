@@ -1,0 +1,125 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Playfair+Display:wght@600&display=swap');
+/* Reset & base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  background: #FFF7EE
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' viewBox='0 0 120 80'><path d='M0,30 C40,50 80,10 120,30L120,0L0,0Z' fill='%23E67E22' fill-opacity='0.15'/><path d='M0,45C40,25 80,65 120,45L120,0L0,0Z' fill='%23E67E22' fill-opacity='0.08'/></svg>")
+    no-repeat top center / cover;
+  color: #2C3E50;
+}
+/* Header */
+header {
+  padding: 1rem;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  position: relative;
+}
+header a {
+  color: #E67E22;
+  font-weight: 500;
+  text-decoration: none;
+}
+header a:first-of-type {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+header a:hover {
+  text-decoration: underline;
+}
+/* Main wrapper */
+main {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+}
+/* Page title */
+main h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+/* Internship list container */
+#internships-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+/* Internship card */
+.internship-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  display: block;
+}
+.internship-card h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.5rem;
+  color: #2C3E50;
+}
+.internship-card p {
+  margin: 0.25rem 0;
+  font-size: 0.95rem;
+  color: #2C3E50;
+}
+/* Buttons */
+.internship-card .view-btn {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 0.75rem;
+  background-color: #7B8FA1;
+  text-align: center;
+  display: inline-block;
+  width: auto;
+}
+.internship-card .view-btn:hover {
+  background-color: #667085;
+}
+/* Edit and Delete buttons */
+.internship-card .edit-btn,
+.internship-card .delete-btn {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 0.75rem;
+  text-align: center;
+  display: inline-block;
+  width: auto;
+}
+.internship-card .edit-btn {
+  background-color: #7B8FA1;
+  margin-right: 0.5rem;
+}
+.internship-card .edit-btn:hover {
+  background-color: #667085;
+}
+.internship-card .delete-btn {
+  background-color: #E74C3C;
+}
+.internship-card .delete-btn:hover {
+  background-color: #C0392B;
+}

@@ -1,0 +1,121 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Playfair+Display:wght@600&display=swap');
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Full-height layout */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Background & typography */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: #2c3e50;
+    background-color: #f2f2f2;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' viewBox='0 0 120 80'><defs><linearGradient id='bg' x1='0' y1='0' x2='0' y2='1'><stop offset='0%' stop-color='%23e3f2fd'/><stop offset='100%' stop-color='%23bbdefb'/></linearGradient></defs><rect width='120' height='80' fill='url(%23bg)'/><path d='M0,25 C30,45 90,5 120,25 L120,0 L0,0 Z' fill='%230d47a1' fill-opacity='0.3'/><path d='M0,35 C30,15 90,55 120,35 L120,0 L0,0 Z' fill='%232197f3' fill-opacity='0.2'/></svg>");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% 30%;
+    padding-top: 0vh;  /* moved up two more steps */
+}
+
+/* Center container */
+#loginContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;   /* fill full viewport */
+    padding: 0 1rem;
+}
+
+/* Card */
+#loginForm {
+    background: #fff;
+    max-width: 540px;
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Heading */
+#loginForm h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.6rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Logo */
+.asta-logo {
+    display: block;
+    max-width: 180px;
+    width: 100%;
+    margin: 0 auto 1rem;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+/* Inputs & select */
+input,
+select {
+    width: 100%;
+    padding: 0.9rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #2196f3;
+    box-shadow: 0 0 0 3px rgba(33,150,243,0.3);
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #2196f3;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 0.5rem;
+}
+button:hover {
+    background-color: #1976d2;
+}
+
+/* Redirect link */
+#redirectContainer {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.95rem;
+}
+#redirectContainer a {
+    color: #2196f3;
+    font-weight: 500;
+    text-decoration: none;
+}
+#redirectContainer a:hover {
+    text-decoration: underline;
+}

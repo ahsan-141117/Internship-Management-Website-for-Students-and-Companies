@@ -1,0 +1,158 @@
+/* browse_internships.css */
+
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Playfair+Display:wght@600&display=swap');
+
+/* Reset & layout */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  background: #F4F6F8
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' viewBox='0 0 120 80'><path d='M0,30 C40,50 80,10 120,30L120,0L0,0Z' fill='%231976D2' fill-opacity='0.15'/><path d='M0,45C40,25 80,65 120,45L120,0L0,0Z' fill='%231976D2' fill-opacity='0.08'/></svg>")
+    no-repeat top center / cover;
+  color: #2C3E50;
+}
+
+/* Header */
+header {
+  padding: 1rem;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  position: relative;
+}
+header a {
+  color: #1976D2;
+  font-weight: 500;
+  text-decoration: none;
+}
+header a:first-of-type {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+header a:hover {
+  text-decoration: underline;
+}
+
+/* Main wrapper */
+main {
+  max-width: 800px;
+  margin: 4rem auto 2rem;
+  padding: 0 1rem;
+}
+
+/* Page title */
+main h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #2C3E50;
+}
+
+/* Search form, flex wrap layout with concise inputs */
+#browse-internships-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  margin-bottom: 2rem;
+}
+#browse-internships-form input {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #2C3E50;
+}
+
+/* First 3 filters, one-third width */
+#browse-internships-form input[id="keyword"],
+#browse-internships-form input[id="location"],
+#browse-internships-form input[id="domain"] {
+  flex: 1 1 calc(33% - 1rem);
+  min-width: 140px;
+}
+
+/* Salary filters, half width */
+#browse-internships-form input[id="salary_min"],
+#browse-internships-form input[id="salary_max"] {
+  flex: 1 1 calc(50% - 1rem);
+  min-width: 120px;
+}
+
+/* Search button full width */
+#browse-internships-form button#search-btn {
+  flex: 1 1 100%;
+  padding: 0.9rem;
+  background-color: #7B8FA1;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+#browse-internships-form button#search-btn:hover {
+  background-color: #667085;
+}
+
+/* Results container */
+#results {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Internship card */
+.internship {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.company-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #f7f7f7;
+  flex-shrink: 0;
+}
+.internship h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+  color: #2C3E50;
+}
+.internship p {
+  margin: 0.25rem 0;
+  font-size: 0.95rem;
+}
+/* Muted gray action buttons */
+.internship button {
+  margin-top: 0.75rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #7B8FA1;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+.internship button:hover {
+  background-color: #667085;
+}
