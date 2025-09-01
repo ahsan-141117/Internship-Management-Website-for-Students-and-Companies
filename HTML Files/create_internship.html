@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create Internship</title>
+  <script src="../javascript/create_internship.js" defer></script>
+  <link rel="stylesheet" href="../css/create_internship.css">
+
+</head>
+<body>
+
+  <header>
+    <a href="/logout">Logout</a>
+    <a href="/company_dashboard.html">Dashboard</a>
+  </header>
+
+  <main>
+    <h1>Create Internship</h1>
+
+    <form id="create-internship-form">
+
+      <label>Title:</label>
+      <input type="text" id="title" name="title" pattern="^[A-Za-z0-9 ]+$">
+
+      <label>Mode:</label>
+      <select id="mode" name="mode">
+        <option value="remote">Remote</option>
+        <option value="on-site">On-Site</option>
+      </select>
+
+      <label>Skills:</label>
+      <input type="text" id="skills" name="skills" pattern="^[a-zA-Z, ]+$">
+
+      <label>Salary:</label>
+      <input type="number" id="salary" name="salary" min="0">
+
+      <label>Duration:</label>
+      <input type="text" id="duration" name="duration" pattern="^[0-9]+ [a-zA-Z]+$">
+
+      <label>Deadline:</label>
+      <input type="date" id="deadline" name="deadline">
+
+      <label>Domain:</label>
+      <input type="text" id="domain" name="domain" pattern="^[a-zA-Z ]+$">
+
+      <label>Location:</label>
+      <input type="text" id="location" name="location" pattern="^[a-zA-Z ]+$">
+
+      <label>Description:</label>
+      <textarea id="description" name="description"></textarea>
+
+      <button type="button" id="create-btn">Save</button>
+    </form>
+  </main>
+
+</body>
+</html>

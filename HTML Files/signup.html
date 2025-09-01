@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up</title>
+  <script src="../javascript/signup.js" defer></script>
+  <link rel="stylesheet" href="../css/signup.css">
+
+</head>
+<body>
+  <div id="signupContainer">
+    <form id="signupForm" action="/signup" method="post" enctype="multipart/form-data">
+      <h1>Sign Up</h1>
+      <img src="asta_logo.png" alt="ASTA Logo" class="asta-logo">
+
+      <label for="userType">User Type</label>
+      <select id="userType" name="userType" required>
+        <option value="Student">Student</option>
+        <option value="Company">Company</option>
+      </select>
+
+      <div id="logoField" style="display:none">
+        <label for="logo">Company Logo</label>
+        <input id="logo" name="logo" type="file" accept="image/*">
+      </div>
+
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" placeholder="Your name" pattern="^[a-zA-Z ]+$" required>
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" placeholder="you@example.com" pattern="^[a-zA-Z0-9]+@[a-zA-Z]+\.com$" required>
+
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" placeholder="••••••••" required>
+
+      <button type="submit">Sign Up</button>
+
+      <div id="redirectContainer">
+        Already have an account? <a href="login.html">Log in</a>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

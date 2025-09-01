@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Browse Internships</title>
+  <script src="../javascript/browse_internships.js" defer></script>
+  <link rel="stylesheet" href="../css/browse_internships.css">
+</head>
+<body>
+
+  <header>
+    <a href="/logout">Logout</a>
+    <a href="/student_dashboard.html">Dashboard</a>
+  </header>
+
+  <main>
+    <h1>Browse Internships</h1>
+
+    <form id="browse-internships-form">
+      <input type="text" id="keyword" name="keyword" placeholder="Keyword">
+      <input type="text" id="location" name="location" placeholder="Location">
+      <input type="text" id="domain" name="domain" placeholder="Domain">
+      <input type="number" id="salary_min" name="salary_min" placeholder="Salary Min">
+      <input type="number" id="salary_max" name="salary_max" placeholder="Salary Max">
+      <button type="button" id="search-btn">Search</button>
+    </form>
+
+    <div id="results"></div>
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Submit Application</title>
+  <script src="../javascript/submit_application.js" defer></script>
+  <link rel="stylesheet" href="../css/submit_application.css">
+
+</head>
+<body>
+
+  <header>
+    <a href="/logout">Logout</a>
+    <a href="/student_dashboard.html">Dashboard</a>
+  </header>
+
+  <main>
+    <h1>Submit Application</h1>
+
+    <form id="submit-application-form" action="/submit_application" method="POST" enctype="multipart/form-data">
+      <input type="hidden" id="internship_id" name="internship_id">
+
+      <label>Resume:</label>
+      <input type="file" id="resume" name="resume">
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+
+</body>
+</html>

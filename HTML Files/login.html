@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <script src="../javascript/login.js" defer></script>
+  <link rel="stylesheet" href="../css/login.css">
+
+</head>
+<body>
+  <div id="loginContainer">
+    <form id="loginForm">
+      <h1>Login</h1>
+      <img src="asta_logo.png" alt="ASTA Logo" class="asta-logo">
+
+      <label for="userType">User Type</label>
+      <select id="userType" name="userType" required>
+        <option value="Student">Student</option>
+        <option value="Company">Company</option>
+      </select>
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" placeholder="you@example.com" pattern="^[a-zA-Z0-9]+@[a-zA-Z]+\.com$" required>
+
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" placeholder="••••••••" required>
+
+      <button type="submit">Log in</button>
+      
+      <div id="redirectContainer">
+        Don't have an account? <a href="signup.html">Sign up</a>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

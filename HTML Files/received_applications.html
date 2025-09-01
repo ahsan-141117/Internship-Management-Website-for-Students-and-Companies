@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Received Applications</title>
+  <script src="../javascript/received_applications.js" defer></script>
+  <link rel="stylesheet" href="../css/received_applications.css">
+
+</head>
+<body>
+
+  <header>
+    <a href="/logout">Logout</a>
+    <a href="/company_dashboard.html">Dashboard</a>
+  </header>
+
+  <main>
+    <label for="candidate_name">Candidate Name:</label>
+    <input id="candidate_name" name="candidate_name" type="text">
+    <button id="search-btn">Search</button>
+
+    <h1>Received Applications</h1>
+
+    <table id="applications-table">
+      <thead>
+        <tr>
+          <th>Applied Role</th>
+          <th>Candidate Name</th>
+          <th>Candidate Email</th>
+          <th>Resume</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="applications-body">
+      </tbody>
+    </table>
+  </main>
+
+</body>
+</html>
